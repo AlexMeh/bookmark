@@ -462,6 +462,20 @@ p#hey4{
 	div#favs {
 		width: 90%;
 	}
+	
+		
+	p#love {
+		position: fixed;
+		bottom: -10px;
+		padding: 7px 4px;
+		text-align: center;
+		color: white;
+		width: 100%;
+		font-family: quicksand;
+		background: #e56f6f;
+		z-index: 999;
+	}
+	
 }
 
 @media only screen and (max-width:620px) {
@@ -608,18 +622,6 @@ p#hey4{
 	div#favs {
 		width: 90%;
 	    font-size: 27px;
-	}
-	
-	p#love {
-		position: fixed;
-		bottom: -10px;
-		padding: 7px 4px;
-		text-align: center;
-		color: white;
-		width: 100%;
-		font-family: quicksand;
-		background: #e56f6f;
-		z-index: 999;
 	}
 }
 
