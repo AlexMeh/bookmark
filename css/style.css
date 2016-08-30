@@ -8,7 +8,7 @@ body {
     font-family: arial;
     font-size: 14px;
     margin: 0 0;
-    box-shadow: 0px 0px 0px 10000px rgba(0, 0, 0, 0.30), inset 0px 0px 0px 10000px rgba(0, 0, 0, 0.30);
+    box-shadow: 0px 0px 0px 10000px rgba(0, 0, 0, 0.40), inset 0px 0px 0px 10000px rgba(0, 0, 0, 0.40);
 }
 
 a {
@@ -31,12 +31,12 @@ li {
 h3 {
     font-family: quicksand;
     font-weight: 600;
-    font-size: 33px;
+    font-size: 37px;
     color: #fff;
-    text-align: left;
-    margin-top: -10px;
+    text-align: center;
+    margin-top: 0px;
     padding-bottom: 5px;
-	pointer-events: none;
+    pointer-events: none;
     -webkit-user-select: none;
 }
 
@@ -177,8 +177,6 @@ h3:hover{
 
 #box1:hover, #box2:hover, #box3:hover, #box4:hover {
     transition: 0.3s linear;
-	background: linear-gradient(271deg, rgba(242, 80, 78, 0.10), rgba(89, 183, 219, 0.10));
-	background-size: 150% 150%;
 }
 
 .fa {
@@ -625,7 +623,89 @@ p#hey4{
 	}
 }
 
+.bookmarks {
+    position: relative;
+    top: 150px;
+    width: 89%;
+    margin: 0 auto;
+	transform: scale(0.9);
+}
+.bookmarks2 {
+    position: relative;
+    top: 160px;
+    width: 89%;
+    margin: 0 auto;
+	transform: scale(0.9);
+}
+.bookmarks3 {
+    position: relative;
+    top: 170px;
+    width: 89%;
+    margin: 0 auto;
+	transform: scale(0.9);
+	margin-bottom: 50px;
+}
 
+img.book {
+	border-radius: 360px;
+    text-align: center;
+    width: 100px;
+    margin: 15px 15px;
+    -webkit-filter: grayscale(70%);
+    opacity: 0.6;
+    transition: 0.3s linear;
+}
+
+img.book:hover {
+    -webkit-filter: grayscale(0%);
+    opacity: 1;
+    transition: 0.3s linear;
+}
+
+.bookm figcaption {
+	color: #fff;
+    font-size: 15px;
+    font-family: quicksand;
+    position: relative;
+    top: 0px;
+    left: 14px;
+    width: 105px;
+    padding: 3px 10px;
+    background: rgb(205, 105, 113);
+    border-radius: 2px;
+	text-align: center;
+	
+	display: none;
+}
+
+.bookm figcaption:before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 40px;
+    border-style: solid;
+    border-width: 0 12px 12px 12px;
+    border-color: transparent transparent rgb(205, 105, 113) transparent;
+}
+
+.bookm {
+    display: inline-block;
+    vertical-align: top;
+    max-width: 130px;
+	height: 165px;
+}
+
+.bookm:hover  figcaption{
+    display: inline-block;
+	
+	animation: top 0.7s forwards;
+	animation-play-state: running;
+}
+
+@keyframes top{
+	0%		{top: -15px;}
+	100%	{top: 5px;}	
+}
 
 
 
